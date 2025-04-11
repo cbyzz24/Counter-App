@@ -1,40 +1,77 @@
 body{
     margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    width: 75vw;
+    max-width: 320px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 30px 20px;
 }
 
 .appName{
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin: 0px;
+    color: darkslategray;
 }
 
-.mainwrapper{
-    text-align: center;
-    align-content: center;
-    width: 375px;
-    height: 250px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-.display{
-    font-size: 2em;
-    /* margin-top: 15px; */
-}
-
-.button{
+.outputDisplay{
+    font-size: 2.5rem;
     margin-top: 15px;
-    font-size: 1.75em;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: bisque;
     padding: 5px 20px;
-    background-color: lightskyblue;
+    border-radius: 15px;
 }
 
+.buttonRow{
+    /* padding: 10px 0px; */
+    
+}
+
+.btn{
+    margin: 10px 15px;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#minus{
+    background-color: red;
+    color: white;
+}
+
+#minus:hover{
+    background-color: hsl(0, 100%, 70%);
+}
+
+#reset{
+    background-color: blue;
+    color: white;
+}
+
+#reset:hover{
+    background-color: hsl(240, 100%, 70%);
+}
+
+#plus{
+    background-color: green;
+    color: white;
+}
+
+#plus:hover{
+    background-color: hsl(120, 100%, 30%);
+}
