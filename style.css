@@ -4,7 +4,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: burlywood;
+    /* background-color: burlywood; */
+    background: #eacda3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,22 +18,27 @@ body{
     align-items: center;
     width: 75vw;
     max-width: 320px;
-    border: 3px solid black;
+    /* border:1px solid black; */
     border-radius: 10px;
     padding: 30px 20px;
+    /* background: blanchedalmond; */
+    background: hsl(35, 63%, 83%);
+    box-shadow: 5px 5px 10px rgb(44, 44, 44);
 }
 
 .appName{
     font-size: 2rem;
     margin: 0px;
-    color: darkslategray;
+    /* color: darkslategray; */
+    color: hsl(33, 100%, 20%);
 }
 
 .outputDisplay{
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     margin-top: 15px;
     margin-bottom: 5px;
-    background-color: bisque;
+    color: hsl(210, 13%, 30%);
+    background-color: white;
     padding: 5px 20px;
     border-radius: 15px;
 }
@@ -42,10 +50,10 @@ body{
 
 .btn{
     margin: 10px 15px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 1.4rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -56,6 +64,9 @@ body{
 
 #minus:hover{
     background-color: hsl(0, 100%, 70%);
+    /* font-size: 2rem; */
+    padding: 13px 23px;
+    transition: ease 0.4s;
 }
 
 #reset{
@@ -65,6 +76,8 @@ body{
 
 #reset:hover{
     background-color: hsl(240, 100%, 70%);
+    padding: 13px 23px;
+    transition: ease 0.4s;
 }
 
 #plus{
@@ -74,4 +87,6 @@ body{
 
 #plus:hover{
     background-color: hsl(120, 100%, 30%);
+    padding: 13px 23px;
+    transition: ease 0.4s;
 }
